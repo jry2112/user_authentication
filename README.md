@@ -17,3 +17,55 @@ By default, the program uses "ppab6.db" as its database. However, the "users.yam
 The database and yaml files are included for samples. Users can create their own db and yaml files, but should be named "ppab6.db" or "users.yaml"
 
 Note: Passwords are hashed and stored with sha256 hexadecimal.
+
+## Example
+login.py
+
+```python
+Please enter your username: jada
+
+Please enter your password: Password
+ACCESS GRANTED
+NOW, TIME FOR THE SECRET
+I don't like dogs that much
+```
+Note: getpass is included to hide password when entered
+
+setup_db.py
+```python
+Database file ppab6.db alread exists. Would you like to overwite it? [yes/no]yes
+Okay, recreating database.
+Database recreated.
+```
+
+add_user.py
+```python
+Hello. Let's create a new account.
+
+Please enter your username: 
+test
+Username is available
+
+Warning: QtConsole does not support password mode, the text you type will be visible.
+Please enter your password: 
+password123
+User created
+Sucessfully added test to the database!
+
+#username is taken
+Hello. Let's create a new account.
+
+Please enter your username: 
+test
+Username is taken. Choose another one.
+
+Please enter your username: 
+test1
+Username is available
+
+Warning: QtConsole does not support password mode, the text you type will be visible.
+Please enter your password: 
+password123
+User created
+Sucessfully added test1 to the database!
+```
