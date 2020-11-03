@@ -1,6 +1,6 @@
 curl https://raw.githubusercontent.com/jehna/readme-best-practices/master/README-default.md > README.md
 
-# user_authentification
+# user_authentication
 PPAB: SQL + Python, allows user to authenticate users saved to the database and add users to database. Users have the option to use YAML config file or SQL database
 
 This project was made using Robert Heaton's Programming Projects for Advanced Beginners. You can find it here: https://robertheaton.com/2019/08/12/programming-projects-for-advanced-beginners-user-logins/
